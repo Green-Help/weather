@@ -29,13 +29,7 @@ check.addEventListener("click", () => {
         data.weather.forEach(items => {
             weatherDescription.innerText = items.description;
 
-            //Use Open weather Map URL For Icons If You Want To Use
-            //How To Use
-
-            //             let iconsForTemp = `http://openweathermap.org/img/wn/${items.icon}.png`;
-            //            tempIcon.src = iconsForTemp;
-            //            
-            //i Will Use My Own Icons
+         
             if (items.id < 250) {
                 tempIcon.src = `assets/storm.svg`;
             } else if (items.id < 350) {
